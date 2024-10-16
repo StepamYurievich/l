@@ -1,0 +1,260 @@
+
+*{
+    background-color: #101E2B;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+ul,li{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.container{
+
+    display: grid;
+    gap: 50px;
+}
+
+/*--------header----------*/
+
+
+.header{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+/*------info---------*/
+
+.info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-first{
+    display: grid;
+    align-items: center;
+}
+
+.info-list{
+    display: grid;
+    gap: 50px;
+}
+
+.info-list_inner{
+    display: grid;
+    gap: 10px;
+}
+
+.info-list_flex{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    gap: 15px;
+}
+
+.info-list_flex li:last-child{
+    display: flex;
+    justify-content: center;
+}
+
+.info-blue{
+    background-color: #24698C;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    height: 4px;
+}
+
+.info-green{
+    background-color: #1EEBA2;
+    width: 50%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    height: 4px;
+}
+
+.info-red{
+    background-color: red;
+    width: 75%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    height: 4px;
+}
+
+/*----------stats---------*/
+
+
+.stats{
+    margin: 20px 0;
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+}
+.stats img{
+    width: 500px;
+}
+.stats-title{
+    text-align: center;
+}
+
+/*-----conurents-list-------*/
+
+.concurebts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.concurebts-title{
+    text-align: center;
+}
+
+.conurents-list{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.concurents-items{
+    display: grid;
+    grid-template-columns: 500px 50px;
+    width: 550px;
+    margin: 0 auto;
+}
+
+.concurents-items span:first-child{
+    width: 100%;
+}
+
+.concurents-item{
+    height: 30px;
+    border-bottom: 1px solid #2E525D;
+}
+
+
+/*--------slider----*/
+
+.slider{
+    display: grid;
+    gap: 20px;
+    padding-bottom: 100px;
+}
+
+.slider-title{
+    text-align: center;
+}
+swiper-container {
+    width: 1000px;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+.swiper-slide{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.absolute{
+    position: absolute;
+    background-color: rgba(255, 242, 242, 0.1);
+    backdrop-filter: blur(5px);
+    width: 203px;
+    bottom: 0;
+    font-size: 12px;
+    border-radius: 16px;
+    height: 53px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    left: 140px;
+}
+
+.top{
+    width: 80%;
+    background: linear-gradient(0.25turn , #40F6EA,#3EB6F2,#24698C);
+    height: 2px;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 32px 29px;
+        margin: 0 auto;
+
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-blue{
+        background-color: #24698C;
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        height: 4px;
+    }
+    .conurents-list{
+        width: 100%;
+    }
+    .stats img{
+        width: 100%;
+    }
+    .concurents-item{
+        width: 100%;
+    }
+    .concurents-items{
+        gap: 10px;
+        justify-content: space-between;
+        display: flex;
+        width: 314px;
+    }
+    swiper-container {
+        width: 314px;
+        height: 100%;
+    }
+    .absolute{
+        position: absolute;
+        background-color: rgba(255, 242, 242, 0.1);
+        backdrop-filter: blur(5px);
+        width: 202px;
+        bottom: 0;
+        font-size: 12px;
+        border-radius: 16px;
+        height: 53px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        left: 56px;
+    }
+}
